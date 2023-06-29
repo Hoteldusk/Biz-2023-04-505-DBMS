@@ -118,3 +118,6 @@ SQL 에서 WHERE 등 조건을 부여하여 SELECTION 을 할때 특히 다중 �
 SELECT * FROM tbl_address WHERE a_id >= 'A0010' AND a_id <= 'A0020' AND a_tel LIKE '090-3%';
 
 SELECT * FROM tbl_address WHERE a_tel LIKE '090-3%' AND a_id >= 'A0010' AND a_id <= 'A0020';
+
+
+---------------------------------------------------------------------------------------------
