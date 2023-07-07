@@ -17,20 +17,21 @@ CREATE TABLE tbl_ter(
 );
 
 CREATE TABLE tbl_TerLink(
-    tl_Id       VARCHAR2(20)    PRIMARY KEY,
-    depTerId        VARCHAR2(10)    NOT NULL,
-    arrTerId        VARCHAR2(10)    NOT NULL
+    tl_Id              VARCHAR2(20)    PRIMARY KEY,
+    tl_depTerId        VARCHAR2(10)    NOT NULL,
+    tl_arrTerId        VARCHAR2(10)    NOT NULL
 );
 
 CREATE TABLE tbl_TerDrive(
     td_Id               VARCHAR2(20)    PRIMARY KEY,
-    tl_Id               VARCHAR2(20)    NOT NULL,
+    td_TlId               VARCHAR2(20)    NOT NULL,
     td_interval         VARCHAR2(6),
     td_wasteTime        VARCHAR2(6),
     td_fare             NUMBER
 );
 
 CREATE TABLE tbl_Terschedule(
-    td_Id               VARCHAR2(20)    NOT NULL,
+    tes_TdId               VARCHAR2(20)    NOT NULL,
     tes_schedule        VARCHAR2(6)
 );
+
